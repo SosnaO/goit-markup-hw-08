@@ -1,0 +1,54 @@
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  & .list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-item {
+    @extend %flex-jus;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    border: 1px solid #f5f4fa;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+      border-color: $accent-color;
+      fill: $accent-color;
+    }
+  }
+  &-icon {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &-title {
+    color: $title-text-color;
+    font-family: $title-fonts;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    &-text {
+      width: 270px;
+      height: 75px;
+      font-family: $title-fonts;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: $primary-text-color;
+    }
+  }
+}
