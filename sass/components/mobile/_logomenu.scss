@@ -34,6 +34,7 @@
 
 .menu-container {
   background-color: $primary-white-color;
+
   text-align: center;
 
   @media screen and (max-width: 767px) {
@@ -57,10 +58,18 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  @media screen and (min-width: 768px) {
+    display: block;
+
+    padding-right: 84px;
+  }
 }
 .contacts {
   @media screen and (max-width: 767px) {
     margin: auto;
     padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-right: 84px;
   }
 }

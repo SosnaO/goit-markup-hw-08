@@ -486,10 +486,23 @@ textarea {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: block;
+    padding-right: 84px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .contacts {
     margin: auto;
     padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    padding-right: 84px;
   }
 }
 
@@ -743,6 +756,31 @@ span {
 @media screen and (min-width: 768px) {
   .aut-nav {
     display: flex;
+    margin-left: auto;
+  }
+  .aut-nav .item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .aut-nav .link {
+    color: #757575;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .aut-nav .link:hover, .aut-nav .link:focus {
+    color: #2196f3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .aut-nav {
+    display: flex;
+    flex-direction: column;
     margin-left: auto;
   }
   .aut-nav .item:not(:last-child) {
