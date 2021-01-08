@@ -1046,7 +1046,7 @@ textarea {
 
 @media screen and (max-width: 767px) {
   .button-mailing {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     width: 200px;
     height: 50px;
