@@ -1,5 +1,5 @@
 .footer {
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 767px) {
     background-color: $primary-bg-color;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -7,8 +7,7 @@
     &-list {
       padding: 0px;
       list-style: none;
-      height: 81px;
-      width: 231px;
+
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -17,7 +16,7 @@
 }
 
 .adress {
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 767px) {
     background-color: $primary-bg-color;
     color: $primary-white-color;
     font-family: $title-fonts;
@@ -25,13 +24,12 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    display: flex;
-    align-items: baseline;
+    text-align: center;
 
     &-list {
-      margin-top: 20px;
-      margin-right: 70px;
+      padding-bottom: 60px;
     }
+
     & .logo {
       color: $primary-white-color;
       &:hover,
@@ -42,7 +40,7 @@
     & .link {
       color: rgba(255, 255, 255, 0.6);
       text-decoration: none;
-      padding-bottom: 9px;
+      padding-top: 8px;
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       &:hover,
       &:focus {
@@ -60,14 +58,21 @@
     }
   }
 }
+.adress-list .logo {
+  @media screen and (max-width: 767px) {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    padding-bottom: 20px;
+  }
+}
 
 .social {
-  @media screen and (min-width: 768px) {
-    width: 206px;
-    height: 80px;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 60px;
 
     &-slogan {
-      width: 145px;
       font-family: $title-fonts;
       font-style: normal;
       font-weight: bold;
@@ -99,15 +104,16 @@
 }
 
 .websocial-list {
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: flex;
+    justify-content: center;
     padding: 0px;
     margin: 0px;
     cursor: pointer;
   }
 }
 .seti-icon {
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: inline-block;
     margin: 12px;
     fill: currentColor;
@@ -120,12 +126,9 @@
 }
 
 .mailing {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    padding-left: 93px;
-
+  @media screen and (max-width: 767px) {
     &-slogan {
+      margin: 0px;
       font-family: $title-fonts;
       font-style: normal;
       font-weight: bold;
@@ -136,7 +139,7 @@
       color: $primary-white-color;
     }
     &-field {
-      display: flex;
+      padding-top: 20px;
     }
     &-input {
       width: 358px;
@@ -156,11 +159,12 @@
 }
 
 .button-mailing {
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: flex;
     align-items: center;
     width: 200px;
     height: 50px;
+    margin-top: 20px;
 
     font-style: normal;
     font-weight: bold;
@@ -176,7 +180,7 @@
     border-radius: 4px;
     cursor: pointer;
     height: 50px;
-    margin-left: 12px;
+
     padding-left: 29px;
     padding-right: 28px;
     padding-top: 10px;
@@ -184,7 +188,7 @@
   }
 }
 .mailing-send {
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 767px) {
     margin: 13px 0px 13px 10px;
   }
 }
