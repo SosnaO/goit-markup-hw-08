@@ -1,12 +1,7 @@
 .features {
-  @media screen and (min-width: 768px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-
-    & .list {
-      display: flex;
-      justify-content: space-between;
-    }
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     &-item {
       display: flex;
@@ -40,11 +35,12 @@
       font-size: 14px;
       line-height: 1.14;
       text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 0.03em;
+
       margin-bottom: 10px;
 
       &-text {
-        width: 270px;
-        height: 75px;
         font-family: $title-fonts;
         font-style: normal;
         font-weight: normal;
@@ -52,6 +48,7 @@
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: $primary-text-color;
+        text-align: justify;
       }
     }
   }
