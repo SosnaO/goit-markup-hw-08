@@ -16,161 +16,161 @@
 }
 
 .modal {
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  background-color: $primary-white-color;
-  min-width: 528px;
-  min-height: 581px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  @media screen and (min-width: 768px) {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: $primary-white-color;
+    max-width: 528px;
+    width: 100%;
+    min-height: 581px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 
-  &-header {
-    left: 576px;
-    top: 261px;
-    font-family: $title-fonts;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    padding-bottom: 12px;
-    margin: 0px;
-    color: $title-text-color;
+    &-header {
+      left: 576px;
+      top: 261px;
+      font-family: $title-fonts;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      padding-bottom: 12px;
+      margin: 0px;
+      color: $title-text-color;
+    }
   }
 }
 .close {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  padding-right: 8px;
-  padding-top: 8px;
-  fill: currentColor;
-  cursor: pointer;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:focus,
-  &:hover {
-    fill: $accent-color;
-    color: $accent-color;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding-right: 8px;
+    padding-top: 8px;
+    fill: currentColor;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus,
+    &:hover {
+      fill: $accent-color;
+      color: $accent-color;
+    }
   }
 }
 
-/*  section*/
-
-/* 
-.section-title {
-  color: var(--title-text-color);
-  margin-top: 0;
-}
-*/
-/*form*/
-
 .form {
-  width: 528px;
-  height: 581px;
-  left: 536px;
-  top: 221px;
-  background-color: $primary-white-color;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding: 40px;
+  @media screen and (min-width: 768px) {
+    width: 528px;
+    height: 581px;
+    left: 536px;
+    top: 221px;
+    background-color: $primary-white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px;
 
-  &-field {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    font-family: $title-fonts;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: $primary-text-color;
-    margin-bottom: 10px;
+    &-field {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      font-family: $title-fonts;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.01em;
+      color: $primary-text-color;
+      margin-bottom: 10px;
 
-    & textarea::placeholder {
-      width: 416px;
-      height: 96px;
-      left: 592px;
-      top: 530px;
+      & textarea::placeholder {
+        width: 416px;
+        height: 96px;
+        left: 592px;
+        top: 530px;
+        font-family: $title-fonts;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+      }
+    }
+
+    &-label {
+      margin-bottom: 4px;
       font-family: $title-fonts;
       font-style: normal;
       font-weight: normal;
       font-size: 12px;
       line-height: 14px;
+    }
+
+    &-input {
+      width: 448px;
+      height: 40px;
+      left: 576px;
+      top: 382px;
+      padding-left: 42px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      box-sizing: border-box;
+      border-radius: 4px;
+      cursor: pointer;
+      outline: transparent;
       letter-spacing: 0.01em;
-      color: rgba(117, 117, 117, 0.5);
+      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:focus,
+      &:hover {
+        fill: $accent-color;
+        border: 1px solid $accent-color;
+      }
+      &:focus ~ .form-img,
+      &:hover ~ .form-img {
+        fill: $accent-color;
+        border-color: $accent-color;
+      }
     }
-  }
 
-  &-label {
-    margin-bottom: 4px;
-    font-family: $title-fonts;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-  }
+    &-img {
+      position: absolute;
+      top: 55%;
+      left: 14px;
+      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      margin-right: 15px;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &-input {
-    width: 448px;
-    height: 40px;
-    left: 576px;
-    top: 382px;
-    padding-left: 42px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    box-sizing: border-box;
-    border-radius: 4px;
-    cursor: pointer;
-    outline: transparent;
-    letter-spacing: 0.01em;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:focus,
-    &:hover {
-      @extend %form;
+      &:hover,
+      &:focus {
+        fill: $accent-color;
+        border: 1px solid $accent-color;
+      }
     }
-    &:focus ~ .form-img,
-    &:hover ~ .form-img {
-      fill: $accent-color;
-      border-color: $accent-color;
-    }
-  }
 
-  &-img {
-    position: absolute;
-    top: 55%;
-    left: 14px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-right: 15px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-      @extend %form;
-    }
-  }
-
-  &-comment {
-    width: 448px;
-    height: 120px;
-    left: 576px;
-    top: 518px;
-    cursor: pointer;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    box-sizing: border-box;
-    border-radius: 4px;
-    margin-bottom: 20px;
-    padding: 12px 16px;
-    outline: transparent;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:focus,
-    &:hover {
-      @extend %form;
+    &-comment {
+      width: 448px;
+      height: 120px;
+      left: 576px;
+      top: 518px;
+      cursor: pointer;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      box-sizing: border-box;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      padding: 12px 16px;
+      outline: transparent;
+      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:focus,
+      &:hover {
+        fill: $accent-color;
+        border: 1px solid $accent-color;
+      }
     }
   }
 }
