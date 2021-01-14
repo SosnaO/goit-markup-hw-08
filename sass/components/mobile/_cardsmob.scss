@@ -1,17 +1,16 @@
 @media screen and (max-width: 767px) {
   .cards {
     display: block;
-    margin-right: 30px;
-    margin-bottom: 30px;
     cursor: pointer;
-    width: 370px;
+    width: 450px;
     height: 404px;
+    margin: 15px 15px 30px 15px;
 
-    &:nth-child(3n) {
-      margin-right: 0px;
+    &:nth-child(1n) {
+      margin-top: 0px;
     }
 
-    &:nth-child(n + 7) {
+    &:nth-child(n + 9) {
       margin-bottom: 0px;
     }
     &-thumb {
