@@ -41,7 +41,11 @@
       text-align: center;
       letter-spacing: 0.03em;
       padding-bottom: 12px;
+      padding-top: 40px;
+      padding-left: 40px;
+      padding-right: 40px;
       margin: 0px;
+      margin-bottom: -40px;
       color: $title-text-color;
     }
   }
@@ -179,13 +183,4 @@
 
 .form-field:nth-child(4) {
   margin-bottom: 20px;
-}
-
-.button-submit {
-  @extend %button;
-  left: 700px;
-  top: 712px;
-
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
