@@ -59,19 +59,17 @@ span {
 }
 
 .aut-envelope {
-  @media screen and (min-width: 1200px) {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-  }
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
 }
+
 .aut-tel {
-  @media screen and (min-width: 1200px) {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-  }
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
 }
+
 .link-icon {
   fill: currentColor;
   vertical-align: middle;

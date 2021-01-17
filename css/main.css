@@ -416,6 +416,29 @@ textarea {
   resize: none;
 }
 
+@media screen and (max-width: 767px) {
+  .span {
+    color: #2196f3;
+  }
+  .logo {
+    margin-right: 93px;
+    color: #212121;
+    font-family: "Raleway";
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .logo:hover, .logo:focus {
+    color: #2196f3;
+  }
+  .link:hover,
+  .link:focus {
+    color: #212121;
+  }
+}
+
 .menu-button {
   display: inline-flex;
   margin: 0;
@@ -997,7 +1020,6 @@ textarea {
     justify-content: center;
     padding: 0px;
     margin: 0px;
-    cursor: pointer;
   }
 }
 
@@ -1434,8 +1456,10 @@ textarea {
 @media screen and (min-width: 768px) {
   .aut-nav {
     margin-left: auto;
+    margin-top: 21px;
   }
   .aut-nav .link {
+    display: flex;
     color: #757575;
     font-family: "Roboto";
     font-style: normal;
@@ -1484,10 +1508,10 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
-  .page {
-    display: flex;
-    text-decoration: none;
-    color: #757575;
+  .link-icon {
+    fill: currentColor;
+    vertical-align: middle;
+    margin-bottom: 10px;
   }
 }
 
@@ -1626,6 +1650,188 @@ textarea {
   }
 }
 
+@media screen and (min-width: 768px) {
+  footer {
+    background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  footer-list {
+    padding: 0px;
+    list-style: none;
+    height: 81px;
+    width: 231px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .adress {
+    background-color: #2f303a;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .adress-list {
+    margin-right: 165px;
+    margin-left: 76px;
+    text-align: center;
+  }
+  .adress .logo {
+    color: #ffffff;
+  }
+  .adress .logo:hover, .adress .logo:focus {
+    color: #2196f3;
+  }
+  .adress .link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    padding-bottom: 9px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .adress .link:hover, .adress .link:focus {
+    color: #2196f3;
+  }
+  .adress-link {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social {
+    text-align: center;
+  }
+  .social-slogan {
+    width: 145px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-bottom: 20px;
+    margin: 0px;
+  }
+  .social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    border-radius: 0px 0px 4px 4px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .social-link:hover, .social-link:focus {
+    background-color: #2196f3;
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .websocial-list {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .seti-icon {
+    display: inline-block;
+    margin: 12px;
+    fill: currentColor;
+  }
+  .seti-icon:hover, .seti-icon:focus {
+    background-color: #2196f3;
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mailing {
+    display: flex;
+    flex-direction: column;
+    padding-left: 93px;
+  }
+  .mailing-slogan {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .mailing-field {
+    display: flex;
+  }
+  .mailing-input {
+    width: 358px;
+    height: 50px;
+    left: 815px;
+    top: 2785px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: transparent;
+    background-color: #2f303a;
+    color: #757575;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .button-mailing {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    background-color: #2196f3;
+    color: #ffffff;
+    outline: transparent;
+    border: none;
+    text-decoration: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    height: 50px;
+    margin-left: 12px;
+    padding-left: 29px;
+    padding-right: 28px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mailing-send {
+    margin: 13px 0px 13px 10px;
+  }
+}
+
 body {
   background-color: #ffffff;
   color: #757575;
@@ -1692,20 +1898,16 @@ span {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .aut-envelope {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-  }
+.aut-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
 }
 
-@media screen and (min-width: 1200px) {
-  .aut-tel {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-  }
+.aut-tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
 }
 
 .link-icon {
@@ -2218,7 +2420,7 @@ span {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer {
     background-color: #2f303a;
     padding-top: 60px;
@@ -2235,7 +2437,7 @@ span {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .adress {
     background-color: #2f303a;
     color: #ffffff;
@@ -2277,7 +2479,7 @@ span {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .social {
     width: 206px;
     height: 80px;
@@ -2311,16 +2513,15 @@ span {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .websocial-list {
     display: flex;
     padding: 0px;
     margin: 0px;
-    cursor: pointer;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .seti-icon {
     display: inline-block;
     margin: 12px;
@@ -2332,7 +2533,7 @@ span {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .mailing {
     display: flex;
     flex-direction: column;
@@ -2367,7 +2568,7 @@ span {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .button-mailing {
     display: flex;
     align-items: center;
@@ -2395,7 +2596,7 @@ span {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .mailing-send {
     margin: 13px 0px 13px 10px;
   }

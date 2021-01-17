@@ -1,5 +1,5 @@
 .footer {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     background-color: $primary-bg-color;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -17,7 +17,7 @@
 }
 
 .adress {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     background-color: $primary-bg-color;
     color: $primary-white-color;
     font-family: $title-fonts;
@@ -62,7 +62,7 @@
 }
 
 .social {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     width: 206px;
     height: 80px;
 
@@ -99,15 +99,14 @@
 }
 
 .websocial-list {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     padding: 0px;
     margin: 0px;
-    cursor: pointer;
   }
 }
 .seti-icon {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: inline-block;
     margin: 12px;
     fill: currentColor;
@@ -120,7 +119,7 @@
 }
 
 .mailing {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: column;
     padding-left: 93px;
@@ -156,7 +155,7 @@
 }
 
 .button-mailing {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
     width: 200px;
@@ -184,7 +183,7 @@
   }
 }
 .mailing-send {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     margin: 13px 0px 13px 10px;
   }
 }
