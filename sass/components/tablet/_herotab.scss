@@ -1,14 +1,14 @@
 .hero {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-color: $primary-bg-color;
 
-    max-width: 1600px;
-    height: 600px;
+    max-width: 768px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
 
@@ -26,8 +26,9 @@
       font-family: $title-fonts;
       font-style: normal;
       font-weight: 900;
-      font-size: 44px;
-      line-height: 1.36;
+      font-size: 26px;
+      line-height: 1.62;
+
       letter-spacing: 0.06em;
       text-transform: uppercase;
       color: $primary-white-color;
