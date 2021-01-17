@@ -17,7 +17,7 @@ footer {
 }
 
 .adress {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     background-color: $primary-bg-color;
     color: $primary-white-color;
     font-family: $title-fonts;
@@ -64,7 +64,7 @@ footer {
 }
 
 .social {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     text-align: center;
 
     &-slogan {
@@ -119,7 +119,7 @@ footer {
 }
 
 .mailing {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     text-align: center;
     margin-left: 166px;
     margin-right: 152px;
