@@ -1341,7 +1341,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .cards {
     display: block;
     margin-right: 15px;
