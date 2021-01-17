@@ -1,16 +1,16 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .site-nav .link.current {
     color: $accent-color;
   }
 
   .flex-container {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    width: 1200px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 768px;
   }
 
   .button-item {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   .name:not(:last-child) {

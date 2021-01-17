@@ -2,17 +2,19 @@ span {
   color: $accent-color;
 }
 .logo {
-  margin-right: 93px;
-  color: $title-text-color;
-  font-family: $title-logo;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: $accent-color;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    color: $title-text-color;
+    font-family: $title-logo;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
 }
 .link:hover,
@@ -57,14 +59,18 @@ span {
 }
 
 .aut-envelope {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
 }
 .aut-tel {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
 }
 .link-icon {
   fill: currentColor;
