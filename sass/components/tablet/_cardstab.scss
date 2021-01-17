@@ -12,6 +12,7 @@
     }
     &:nth-child(-n + 2) {
       height: 440px;
+      border: 1px solid #eeeeee;
     }
 
     &:nth-child(n + 9) {
@@ -64,8 +65,12 @@
     border-top-color: $primary-white-color;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-right: 24px;
+    padding-right: 24px;1
     padding-left: 24px;
+
+    &:nth-child(-n + 2) {
+      border: none;
+    }
   }
 
   .portfolio-title {

@@ -1505,6 +1505,7 @@ textarea {
   }
   .cards:nth-child(-n + 2) {
     height: 440px;
+    border: 1px solid #eeeeee;
   }
   .cards:nth-child(n + 9) {
     margin-bottom: 0px;
@@ -1552,6 +1553,9 @@ textarea {
     padding-bottom: 20px;
     padding-right: 24px;
     padding-left: 24px;
+  }
+  .card-content:nth-child(-n + 2) {
+    border: none;
   }
   .portfolio-title {
     color: #212121;
