@@ -8,8 +8,8 @@
     background: #f5f4fa;
 
     &-img {
-      width: 270px;
-      height: 260px;
+      width: 354px;
+      height: 374px;
     }
 
     &-title {
@@ -17,20 +17,24 @@
       font-family: $title-fonts;
       font-style: normal;
       font-weight: bold;
-      font-size: 36px;
-      line-height: 1.19;
+      font-size: 28px;
+      line-height: 1.17;
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
     }
     &-element {
       margin-right: 30px;
+      margin-bottom: 30px;
       background: $primary-white-color;
       border-radius: 0px 0px 4px 4px;
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
-      &:nth-child(4n) {
+      &:nth-child(2n) {
         margin-right: 0;
+      }
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0px;
       }
     }
 
@@ -61,9 +65,9 @@
       align-items: center;
       justify-content: center;
       justify-content: space-between;
-      padding-left: 32px;
-      padding-right: 32px;
-      padding-bottom: 30px;
+      padding-left: 74px;
+      padding-right: 74px;
+      padding-bottom: 24px;
       color: #afb1b8;
 
       &-link {
