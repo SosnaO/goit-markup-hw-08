@@ -689,7 +689,6 @@ textarea {
     height: 400px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -712,6 +711,18 @@ textarea {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/header/headerimg.jpg);
+  }
+}
+
+@media (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/header/headerimg@2x.jpg);
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1678,7 +1689,6 @@ textarea {
     height: 400px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1693,6 +1703,18 @@ textarea {
     text-transform: uppercase;
     color: #ffffff;
     margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/header/headerimg.jpg);
+  }
+}
+
+@media (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/header/headerimg@2x.jpg);
   }
 }
 
@@ -2204,7 +2226,6 @@ span {
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -2219,6 +2240,18 @@ span {
     text-transform: uppercase;
     color: #ffffff;
     margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/header/img.jpg);
+  }
+}
+
+@media (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/header/img@2x.jpg);
   }
 }
 
