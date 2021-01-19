@@ -285,7 +285,33 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team list">
             <li class="team-element">
-              <img class="team-img" src="./images/Dem.jpg" alt="Фото" />
+            <picture>
+            <sourse
+            srcset="
+            ./images/desktop/team/dem/img-1.jpg 1x,
+            ./images/desktop/team/dem/img.jpg 2x" 
+            media="(min-width:1200px)"
+            sizes="(min-width:1200px) 270px"
+            type="image/jpg"/>
+            <sourse
+            srcset="./images/tablet/team/dem/img.jpg 1x,
+            ./images/tablet/team/dem/img@2x.jpg 2x" 
+            smedia="(min-width:768px)"
+            sizes="(min-width:768px) 354px"
+            type="image/jpg"/>
+           
+             <sourse
+            srcset="./images/mobile/team/dem/demimg.jpg 1x,
+            ./images/mobile/team/dem/demimg@2x.jpg 2x"
+            media="(min-width:480px)"
+            sizes="(min-width:480x) 450px"
+            type="image/jpg"/>
+            <img src="./images/mobile/team/dem/demimg.jpg"
+            alt="Фото">
+            </picture>
+
+
+          
 
               <h3 class="team-name">Игорь Демьяненко</h3>
               <p class="team-name-text">Product Designer</p>
