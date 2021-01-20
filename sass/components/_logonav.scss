@@ -22,6 +22,18 @@ span {
   color: $title-text-color;
 }
 
+.link.current::before {
+  @media screen and (min-width: 1200px) {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 85px;
+    background: $accent-color;
+    border-radius: 2px;
+  }
+}
+
 .main-nav {
   @extend %flex-row;
 }
