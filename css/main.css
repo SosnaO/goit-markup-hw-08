@@ -1369,10 +1369,6 @@ textarea {
   .cards:nth-child(2n) {
     margin-right: 0px;
   }
-  .cards:nth-child(-n + 2) {
-    height: 440px;
-    border: 1px solid #eeeeee;
-  }
   .cards:nth-child(n + 9) {
     margin-bottom: 0px;
     margin-right: 0px;
@@ -1417,11 +1413,8 @@ textarea {
     border-top-color: #ffffff;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-right: 24px;
+    padding-right: 20px;
     padding-left: 24px;
-  }
-  .card-content:nth-child(-n + 2) {
-    border: none;
   }
   .portfolio-title {
     color: #212121;
