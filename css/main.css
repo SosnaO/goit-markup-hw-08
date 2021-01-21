@@ -1349,7 +1349,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .link-icon {
     fill: currentColor;
     vertical-align: middle;
@@ -1413,7 +1413,7 @@ textarea {
     border-top-color: #ffffff;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-right: 20px;
+    padding-right: 10px;
     padding-left: 24px;
   }
   .portfolio-title {
@@ -2159,7 +2159,7 @@ span {
     position: absolute;
     width: 100%;
     height: 4px;
-    top: 85px;
+    top: 76px;
     background: #2196f3;
     border-radius: 2px;
   }
