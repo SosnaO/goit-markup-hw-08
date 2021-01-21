@@ -2249,13 +2249,13 @@ span {
   }
 }
 
-@media not all, (min-width: 1200px) {
+@media not all, screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/header/img.jpg);
   }
 }
 
-@media not all, (min-width: 1200px) and (min-resolution: 2dppx) {
+@media not all, screen and (min-width: 1200px), screen and (min-resolution: 2dppx), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/header/img@2x.jpg);
   }
