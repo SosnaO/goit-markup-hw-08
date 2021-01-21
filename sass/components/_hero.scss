@@ -29,7 +29,7 @@
     }
   }
 }
-@media not all, screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(
         to right,
@@ -39,7 +39,7 @@
       url(../images/desktop/header/img.jpg.jpg);
   }
 
-  @media not all, screen and (min-resolution: 2dppx) {
+  @media screen and (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(
           to right,
