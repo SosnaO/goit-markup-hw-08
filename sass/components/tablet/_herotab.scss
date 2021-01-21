@@ -36,7 +36,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/tablet/header/headerimg.jpg);
+      url(./images/tablet/header/headerimg.jpg);
   }
 
   @media (min-resolution: 2dppx) {
@@ -46,7 +46,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(/images/tablet/header/headerimg@2x.jpg);
+        url(./images/tablet/header/headerimg@2x.jpg);
     }
   }
 }
